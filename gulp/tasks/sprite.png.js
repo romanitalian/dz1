@@ -6,7 +6,7 @@ module.exports = function () {
       .pipe($.gp.spritesmith({
         imgName: 'sprite.png',
         styleName: 'sprite.css',
-        imgPath: $.config.root + '/assets/img/sprite.png'
+        imgPath: "" + $.config.root + '/assets/img/sprite.png' + ""
       }))
       .pipe($.gulp.dest($.config.root + '/assets/img'));
   })
