@@ -20,10 +20,13 @@ module.exports = function() {
       .pipe($.gp.svgSprite({
         mode: {
           symbol: {
-            sprite: "../sprite.svg"
+            sprite: '../sprite.svg'
+          },
+          example: {
+            dest: '../tmp/svgDemo.html'
           }
         }
       }))
-      .pipe($.gulp.dest($.config.root + '/assets/img'))
-  })
+      .pipe($.gulp.dest($.config.root + '/assets/img'));
+  });
 };
