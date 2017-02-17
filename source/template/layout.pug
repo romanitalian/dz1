@@ -1,4 +1,5 @@
 include ./sections/_mixins
+- var ttl = "romanitalian"
 
 doctype html
 html(lang='ru')
@@ -9,17 +10,19 @@ html(lang='ru')
         link(href='/assets/css/app.css', rel='stylesheet')
 
         block title
-            title ROMANITALIAN - about me
-    body
-        .wrapper
-            .maincontent
-                include ./sections/header
-                +nav('nav', ["главная", "новости", "о компании", "сравнение"], 0)
-                .article
-                    .container
-                        .content
-                            .section-title
-                            .content__desc
-                                block content
+            title #{ttl} | main
 
-        include ./sections/footer
+block content
+    .wrapper
+        section.section.hero
+            .hero__bg
+                img(src="/assets/img/portfolio.jpg" alt="mounting backgournd").hero__bg-img
+
+            .hero__container
+                img(src="/assets/img/portfolio-header.png" alt="portfolio-header").hero-title-pic
+
+            .user
+                .user__pic-container
+                    img(src="/assets/img/user.jpg" alt="").user__pic
+                    .user__name Roman Roman
+                    .user__desc desct this page
