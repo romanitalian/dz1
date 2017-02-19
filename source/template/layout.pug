@@ -25,144 +25,144 @@ html(lang='ru')
 
         block title
             title #{ttl} | main
+body
+    block content
+        .wrapper
+            section.section.hero
+                .hero__bg
+                    img(src="assets/img/bg_1800.jpg" alt="mounting background").hero__bg-img
 
-block content
-    .wrapper
-        section.section.hero
-            .hero__bg
-                img(src="assets/img/bg_1800.jpg" alt="mounting background").hero__bg-img
+                .hero__container
+                    img(src="assets/img/bg_title.png" alt="bg_title").hero-title-pic
 
-            .hero__container
-                img(src="assets/img/bg_title.png" alt="bg_title").hero-title-pic
+                .user
+                    .user__pic-container
+                        img(src="assets/img/user.jpg" alt="").user__pic
+                        .user__name Roman
+                        .user__desc romanitalian
+                ul.socials__header
+                    each icon in icons
+                        li.socials__header__item
+                            - console.log(icon)
+                            a(href=icon.href, title=icon.title).socials__header__link
+                                svg.socials__header__icon
+                                    use(xlink:href=`assets/img/sprite.svg#${icon.id}`)
+                button(type="button").hamburger.hamburger--emphatic
+                    span.hamburger-box
+                        span.hamburger-inner
 
-            .user
-                .user__pic-container
-                    img(src="assets/img/user.jpg" alt="").user__pic
-                    .user__name Roman
-                    .user__desc romanitalian
-            ul.socials__header
-                each icon in icons
-                    li.socials__header__item
-                        - console.log(icon)
-                        a(href=icon.href, title=icon.title).socials__header__link
-                            svg.socials__header__icon
-                                use(xlink:href=`assets/img/sprite.svg#${icon.id}`)
-            button(type="button").hamburger.hamburger--emphatic
-                span.hamburger-box
-                    span.hamburger-inner
+            section.section.about
+                .about__col.about__col_left
+                    svg(viewbox="0 0 600 110" preserveAspectRatio="none").about__triangle
+                        polygon(points="0,0 0,110 600, 110")
+                    .about__content
+                        .section-title(style="background-image: url('assets/img/bg_title.png'); background-size: 80px 60px; background-repeat: no-repeat;")
+                            | ОБО МНЕ
+                        img(src="assets/img/bg_title.png" alt="me").section-title__img
+                        .about
+                            .about__pic
+                                img(src="assets/img/user_origin.jpg" alt="me")
+                            .block-title
+                                | КТО Я
+                            .block-text
+                                p
+                                | Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений.
+                                | Мне нравится делать интересные и современные проекты.
+                                p
+                                | Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool. Чуть позже я освежу в нём свой контент.
+                                | А пока посмотрите, как тут всё классно и красиво!
 
-        section.section.about
-            .about__col.about__col_left
-                svg(viewbox="0 0 600 110" preserveAspectRatio="none").about__triangle
-                    polygon(points="0,0 0,110 600, 110")
-                .about__content
-                    .section-title(style="background-image: url('assets/img/bg_title.png'); background-size: 80px 60px; background-repeat: no-repeat;")
-                        | ОБО МНЕ
-                    img(src="assets/img/bg_title.png" alt="me").section-title__img
-                    .about
-                        .about__pic
-                            img(src="assets/img/user_origin.jpg" alt="me")
+                .about__col.about__col_right
+                    svg(viewbox="0 0 600 110" preserveAspectRatio="none").about__triangle
+                        polygon(points="0,110 600,110 600,0")
+
+                    .skills
                         .block-title
-                            | КТО Я
-                        .block-text
+                            | ЧЕМ Я МОГУ БЫТЬ <br/> ВАМ ПОЛЕЗЕН
+                        .skills__text
                             p
-                            | Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений.
-                            | Мне нравится делать интересные и современные проекты.
-                            p
-                            | Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool. Чуть позже я освежу в нём свой контент.
-                            | А пока посмотрите, как тут всё классно и красиво!
-
-            .about__col.about__col_right
-                svg(viewbox="0 0 600 110" preserveAspectRatio="none").about__triangle
-                    polygon(points="0,110 600,110 600,0")
-
-                .skills
-                    .block-title
-                        | ЧЕМ Я МОГУ БЫТЬ <br/> ВАМ ПОЛЕЗЕН
-                    .skills__text
-                        p
-                        | Я являюсь веб-разработчиком. В основном моя работа касается серверной разработки.
-                        | Но я также могу быть полезен в задачах Frontend разработки.
-                        | Мне интересны веб-сервисы и веб-приложения в целом, с технологической точки зрения.
-                    ul.skills-group
-                        li.skills-group__item
-                            .skills-group__title Backend
-                            ul.skills-list
-                                li.skills-list__item
-                                    .skill
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            text(asdfasdf)
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                        li.skills-group__item
-                            .skills-group__title Frontend
-                            ul.skills-list
-                                li.skills-list__item
-                                    .skill
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                        li.skills-group__item
-                            .skills-group__title WorkFlow
-                            ul.skills-list
-                                li.skills-list__item
-                                    .skill
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-                                        svg.skill__circle
-                                            circle(cx="50" cy="50" r="40").skills__circle-under
-                                            circle(cx="50" cy="50" r="40").skills__circle-above
-        section.section.map
-            img(src="assets/img/map.jpg" alt="map").section__map
-        footer.footer
-            .footer__wrapper
-                .footer__wrapper-content
-                    .footer__wrapper-content-one
-                        | Этот сайт сделан в рамках обучения в Школе онлайн образования Loftschool
-                    .footer__wrapper-content-two
-                        ul.footer__links
-                            each lnk in footer_links
+                            | Я являюсь веб-разработчиком. В основном моя работа касается серверной разработки.
+                            | Но я также могу быть полезен в задачах Frontend разработки.
+                            | Мне интересны веб-сервисы и веб-приложения в целом, с технологической точки зрения.
+                        ul.skills-group
+                            li.skills-group__item
+                                .skills-group__title Backend
+                                ul.skills-list
+                                    li.skills-list__item
+                                        .skill
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                text(asdfasdf)
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                            li.skills-group__item
+                                .skills-group__title Frontend
+                                ul.skills-list
+                                    li.skills-list__item
+                                        .skill
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                            li.skills-group__item
+                                .skills-group__title WorkFlow
+                                ul.skills-list
+                                    li.skills-list__item
+                                        .skill
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+                                            svg.skill__circle
+                                                circle(cx="50" cy="50" r="40").skills__circle-under
+                                                circle(cx="50" cy="50" r="40").skills__circle-above
+            section.section.map
+                img(src="assets/img/map.jpg" alt="map").section__map
+            footer.footer
+                .footer__wrapper
+                    .footer__wrapper-content
+                        .footer__wrapper-content-one
+                            | Этот сайт сделан в рамках обучения в Школе онлайн образования Loftschool
+                        .footer__wrapper-content-two
+                            ul.footer__links
+                                each lnk in footer_links
+                                    li
+                                        a(href=lnk.href, title=lnk.title) #{lnk.title}
+                            ul.socials__footer
+                                each icon in icons
+                                    li.socials__footer__item
+                                        - console.log(icon)
+                                        a(href=icon.href, title=icon.title).socials__footer__link
+                                            svg.socials__footer__icon
+                                                use(xlink:href=`assets/img/sprite.svg#${icon.id}`)
+                        .footer__wrapper-content-three
+                            ul.footer__wrapper-content-contact
                                 li
-                                    a(href=lnk.href, title=lnk.title) #{lnk.title}
-                        ul.socials__footer
-                            each icon in icons
-                                li.socials__footer__item
-                                    - console.log(icon)
-                                    a(href=icon.href, title=icon.title).socials__footer__link
-                                        svg.socials__footer__icon
-                                            use(xlink:href=`assets/img/sprite.svg#${icon.id}`)
-                    .footer__wrapper-content-three
-                        ul.footer__wrapper-content-contact
-                            li
-                                a(href="skype: #{contacts.skype}") skype: #{contacts.skype}
-                            li #{contacts.email}
-                            li
-                                a(href="tel:// #{contacts.tel}", title=contacts.tel) #{contacts.tel}
-                            li #{contacts.address}
-            .footer__copyright
-                | Roman Roman | Создано с любовью на кухне | 2017
+                                    a(href="skype: #{contacts.skype}") skype: #{contacts.skype}
+                                li #{contacts.email}
+                                li
+                                    a(href="tel:// #{contacts.tel}", title=contacts.tel) #{contacts.tel}
+                                li #{contacts.address}
+                .footer__copyright
+                    | Roman Roman | Создано с любовью на кухне | 2017
