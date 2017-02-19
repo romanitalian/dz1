@@ -1,0 +1,21 @@
+.hero {
+  height: 1050px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__bg {
+  top: 0;
+  width: 100%;
+  @include centered(x);
+}
+
+.hero__container {
+  @include centered(y);
+  width: 100%;
+}
+
+.hero-title-pic {
+  @include centered();
+}
+

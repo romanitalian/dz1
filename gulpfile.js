@@ -14,6 +14,7 @@ global.$ = {
   buffer : require('vinyl-buffer'),
   browserSync: require('browser-sync').create(),
   merge: require('merge-stream'),
+  sassGlob: require('gulp-sass-glob'),
   gp: require('gulp-load-plugins')()
 };
 
@@ -22,7 +23,7 @@ $.path.task.forEach(function (taskPath) {
 });
 
 $.gulp.task('default', $.gulp.series(
-  'clean',
+  // 'clean',
   $.gulp.parallel(
     'sass',
     'pug',

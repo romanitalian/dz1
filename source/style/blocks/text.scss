@@ -1,0 +1,191 @@
+// -------------- text --------------
+.block-title {
+  font-size: 34px;
+  color: #373e42;
+  text-align: center;
+  //padding: 0 80px;
+  //display: inline-block;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include bernier;
+  //position: relative;
+
+  margin: 0 auto;
+  padding-bottom: $text-bottom;
+  line-height:100%;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    border-bottom: 3px solid #566359;
+    width: 90px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+// -------------- #text --------------
+
+// -------------- sections --------------
+.section-title {
+  line-height: 100%;
+  font-size: 63px;
+  color: #373e42;
+  text-align: center;
+  //padding: 0 80px;
+  padding-bottom: 58px;
+  //display: inline-block;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include bernier;
+  position: relative;
+  margin: 0 auto;
+}
+.section-title__img {
+  //@include centered('left');
+  //
+  //position: absolute;
+  //left: 50%;
+  //-webkit-transform: translate(-50%, -50%);
+  //-ms-transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
+  //width: 300px;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 300px;
+}
+// -------------- #sections --------------
+// -------------- skils --------------
+
+.skills {
+  @extend %clearfix;
+  padding: 0 6.75%;
+}
+
+.skill__circle {
+  width: 110px;
+  height: 110px;
+  display: block;
+  fill: transparent;
+  stroke-width: 20;
+  float: left;
+}
+
+.skills__circle-under {
+  stroke: #dfdcd5;
+}
+
+.skills__circle-above {
+  stroke: $blue;
+}
+.skills-list__item {
+  display: block;
+  @extend %clearfix;
+}
+.skills-group__title {
+  font-size: 22px;
+  padding-bottom: 18px;
+}
+.skills__text {
+  padding-bottom: $text-bottom;
+}
+// -------------- #skils --------------
+// -------------- map --------------
+.section__map {
+  width: 100%;
+}
+// -------------- #map --------------
+// -------------- footer --------------
+.footer {
+  position: absolute;
+  margin-top: -$footer-height;
+  height: $footer-height;
+  width: 100%;
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    @include background-opacity($footer-color, 0.9);
+    &:after {
+      content: "";
+      display: block;
+      height: 40px;
+    }
+    &-content {
+      color: #FFFFFA;
+    }
+  }
+  .footer__copyright {
+    position: absolute;
+    margin-top: -$footer-copyright-height;
+    height: $footer-copyright-height;
+    @include background-opacity($blue, 0.5);
+    color: $white;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+.footer__wrapper-content {
+  padding-top: 31px;
+  padding-left: 31px;
+}
+.footer__wrapper-content-one {
+  width: 27%;
+  float: left;
+  //padding-left: 31px;
+  //padding-top: 31px;
+}
+.footer__wrapper-content-two {
+  border-left: 1px solid $footer-border-color;
+  width: 34%;
+  float: left;
+  margin-left: 31px;
+  padding-left: 31px;
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+.footer__wrapper-content-three {
+  border-left: 1px solid $footer-border-color;
+  width: 27%;
+  float: left;
+  margin-left: 31px;
+  padding-left: 31px;
+}
+.footer__links {
+  list-style-type: none;
+  margin-bottom: 35px;
+}
+.footer__links li {
+  display: inline;
+  margin-right: 38px;
+  font-weight: bold;
+}
+
+.socials_ {
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__icon {
+    fill: $footer-social-color;
+    width: 25px;
+    height: 35px;
+    &:hover {
+      fill: $footer-social-color-hover;
+    }
+  }
+}
+.footer__wrapper-content-contact {
+  line-height: 1.6em;
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+// -------------- #footer --------------
