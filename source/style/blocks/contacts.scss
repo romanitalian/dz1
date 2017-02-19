@@ -1,0 +1,41 @@
+// ----------------------- contacts ---------------
+.contacts {
+  position: absolute;
+  width: 38%;
+  height: 12%;
+  transform: translate(-50%);
+  margin-top: -45%;
+  margin-left: 50%;
+  padding: 20px;
+  @include background-opacity($white, 0.8);
+  &__list_left {
+    padding: 20px;
+  }
+  &__list_right {
+    padding: 20px;
+  }
+  &__item {
+   // width: 40%;
+  }
+  &__link {
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  &__icon {
+    fill: $blue;
+    width: 45px;
+    height: 45px;
+    margin-right: 9px;
+  }
+  &__text {
+    color: $contacts-color;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+// ----------------------- #contacts ---------------

@@ -190,6 +190,30 @@ html(lang='ru')
                                                 .skill__title docker
                 section.section.map
                     img(src="assets/img/map.jpg" alt="map").section__map
+                    .contacts
+                        .contacts__title.block-title КОНТАКТЫ
+                        ul.contacts__list_left
+                            li.contacts__item
+                                a(href="skype: #{contacts.skype}").contacts__link
+                                    svg.contacts__icon
+                                        use(xlink:href=`assets/img/sprite.svg#skype`)
+                                    .contacts__text skype: #{contacts.skype}
+                            li.contacts__item
+                                a(href="email: #{contacts.address}").contacts__link
+                                    svg.contacts__icon
+                                        use(xlink:href=`assets/img/sprite.svg#map_marker`)
+                                    .contacts__text #{contacts.address}
+                        ul.contacts__list_right
+                            li.contacts__item
+                                a(href="email: #{contacts.address}").contacts__link
+                                    svg.contacts__icon
+                                        use(xlink:href=`assets/img/sprite.svg#map_marker`)
+                                    .contacts__text #{contacts.address}
+                            li.contacts__item
+                                a(href="email: #{contacts.address}").contacts__link
+                                    svg.contacts__icon
+                                        use(xlink:href=`assets/img/sprite.svg#map_marker`)
+                                    .contacts__text #{contacts.address}
                 footer.footer
                     .footer__wrapper
                         .footer__wrapper-content
