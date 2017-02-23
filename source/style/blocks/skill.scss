@@ -44,8 +44,16 @@
     // margin-left: 8%;
     word-wrap: break-word;
     // transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    // top: 50%;
+    // left: 50%;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 1em;
+    margin: auto;
+    right: 0;
+    text-align: center;
   }
 }
 
