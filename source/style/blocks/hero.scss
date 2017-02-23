@@ -1,7 +1,10 @@
 .hero {
-  height: 600px;
+  height: 50vmin;
   overflow: hidden;
   position: relative;
+  @media screen and (max-width: 995px) , screen and (max-height: 800px) {
+    height: 80vmin;
+  }
 }
 
 .hero__bg {
