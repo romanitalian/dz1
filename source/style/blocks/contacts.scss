@@ -2,20 +2,18 @@
 .contacts {
   position: absolute;
   width: 38%;
-  height: 12%;
+  height: 11%;
   transform: translate(-50%);
-  margin-top: -45%;
+  margin-top: -40%;
   margin-left: 50%;
   padding: 20px;
   @include background-opacity($white, 0.8);
-  &__list_left {
+  &__list {
     padding: 20px;
-  }
-  &__list_right {
-    padding: 20px;
+    column-count: 2;
   }
   &__item {
-   // width: 40%;
+   margin-bottom: 35px;
   }
   &__link {
     text-decoration: none;
@@ -25,10 +23,18 @@
     -webkit-box-align: center;
     align-items: center;
   }
+  &__text {
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+  }
   &__icon {
     fill: $blue;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-right: 9px;
   }
   &__text {

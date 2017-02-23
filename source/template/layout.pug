@@ -13,7 +13,7 @@ include ./sections/_mixins
     {href: "#", title: 'Блог'},
     {href: "#", title: 'Аторизация'}
     ]
-- contacts = {skype: "romanitalian", tel: "7-000-000-0000", email: "romanitalian.net@gmail.com", address: "Новосибирск, ул. Инская, д. 14"}
+- contacts = {skype: "romanitalian", phone: "7-000-000-0000", email: "romanitalian.net@gmail.com", address: "Новосибирск, ул. Инская, д. 14"}
 
 doctype html
 html(lang='ru')
@@ -191,26 +191,25 @@ html(lang='ru')
                 section.section.map
                     img(src="assets/img/map.jpg" alt="map").section__map
                     .contacts
-                        .contacts__title.block-title КОНТАКТЫ
-                        ul.contacts__list_left
+                        .contacts__title.text-title КОНТАКТЫ
+                        ul.contacts__list
                             li.contacts__item
-                                a(href="skype: #{contacts.skype}").contacts__link
+                                a(href=`skype: ${contacts.skype}`).contacts__link
                                     svg.contacts__icon
                                         use(xlink:href=`assets/img/sprite.svg#skype`)
-                                    .contacts__text skype: #{contacts.skype}
+                                    .contacts__text #{contacts.skype}
                             li.contacts__item
-                                a(href="email: #{contacts.address}").contacts__link
+                                a(href=`email: ${contacts.envelope}`).contacts__link
                                     svg.contacts__icon
-                                        use(xlink:href=`assets/img/sprite.svg#map_marker`)
-                                    .contacts__text #{contacts.address}
-                        ul.contacts__list_right
+                                        use(xlink:href=`assets/img/sprite.svg#envelope`)
+                                    .contacts__text #{contacts.email}
                             li.contacts__item
-                                a(href="email: #{contacts.address}").contacts__link
+                                a(href=`${contacts.phone}`).contacts__link
                                     svg.contacts__icon
-                                        use(xlink:href=`assets/img/sprite.svg#map_marker`)
-                                    .contacts__text #{contacts.address}
+                                        use(xlink:href=`assets/img/sprite.svg#phone`)
+                                    .contacts__text #{contacts.phone}
                             li.contacts__item
-                                a(href="email: #{contacts.address}").contacts__link
+                                span.contacts__text
                                     svg.contacts__icon
                                         use(xlink:href=`assets/img/sprite.svg#map_marker`)
                                     .contacts__text #{contacts.address}
