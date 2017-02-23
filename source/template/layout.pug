@@ -37,9 +37,10 @@ html(lang='ru')
 
                     .user
                         .user__pic-container
-                            img(src="assets/img/user.jpg" alt="").user__pic
+                            .user__pic-wrapper
+                                img(src="assets/img/user.jpg" alt="").user__pic-img
                             .user__name Roman
-                            .user__desc romanitalian
+                            .user__desc Личный сайт веб разработчика
                     ul.socials.socials__header
                         each icon in icons
                             li.socials__item
