@@ -1,5 +1,5 @@
 // -------------- text --------------
-.block-title {
+.text-title {
   font-size: 34px;
   color: #373e42;
   text-align: center;
@@ -14,6 +14,10 @@
   margin: 0 auto;
   padding-bottom: $text-bottom;
   line-height:100%;
+
+  &__line {
+    @extend %clearfix;
+  }
 
   &:after {
     content: "";
