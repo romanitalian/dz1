@@ -40,12 +40,11 @@ html(lang='ru')
                             img(src="assets/img/user.jpg" alt="").user__pic
                             .user__name Roman
                             .user__desc romanitalian
-                    ul.socials__header
+                    ul.socials.socials__header
                         each icon in icons
-                            li.socials__header__item
-                                - console.log(icon)
-                                a(href=icon.href, title=icon.title).socials__header__link
-                                    svg.socials__header__icon
+                            li.socials__item
+                                a(href=icon.href, title=icon.title).socials__link
+                                    svg.socials__icon
                                         use(xlink:href=`assets/img/sprite.svg#${icon.id}`)
                     button(type="button").hamburger.hamburger--emphatic
                         span.hamburger-box
@@ -223,12 +222,11 @@ html(lang='ru')
                                     each lnk in footer_links
                                         li
                                             a(href=lnk.href, title=lnk.title) #{lnk.title}
-                                ul.socials__footer
+                                ul.socials.socials__footer
                                     each icon in icons
-                                        li.socials__footer__item
-                                            - console.log(icon)
-                                            a(href=icon.href, title=icon.title).socials__footer__link
-                                                svg.socials__footer__icon
+                                        li.socials__item
+                                            a(href=icon.href, title=icon.title).socials__link
+                                                svg.socials__icon
                                                     use(xlink:href=`assets/img/sprite.svg#${icon.id}`)
                             .footer__wrapper-content-three
                                 ul.footer__wrapper-content-contact

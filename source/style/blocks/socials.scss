@@ -1,7 +1,13 @@
-.socials__header {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+.socials {
+  &__header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &__link {
+    fill: $white;
+    margin-right: 27px;
+  }
   &__item {
     display: inline-block;
     vertical-align: middle;
@@ -13,26 +19,29 @@
       fill: $icon-color-hover;
     }
   }
-  &__link {
-    fill: $white;
-    margin-right: 27px;
-  }
-}
-.socials__footer {
-  left: 20px;
-  &__item {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  &__icon {
-    width: 25px;
-    height: 35px;
-    &:hover {
-      fill: $footer-social-color-hover;
+
+  &.socials__footer {
+    .socials__link {
+      fill: $footer-social-color-footer;
     }
   }
-  &__link {
-    fill: $footer-social-color;
-    margin-right: 27px;
-  }
 }
+
+// .socials__footer {
+//   left: 20px;
+//   &__item {
+//     display: inline-block;
+//     vertical-align: middle;
+//   }
+//   &__icon {
+//     width: 25px;
+//     height: 35px;
+//     &:hover {
+//       fill: $footer-social-color-hover;
+//     }
+//   }
+//   &__link {
+//     fill: $footer-social-color;
+//     margin-right: 27px;
+//   }
+// }
