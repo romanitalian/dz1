@@ -1,5 +1,5 @@
 .hero {
-  height: 1050px;
+  height: 600px;
   overflow: hidden;
   position: relative;
 }
@@ -8,6 +8,9 @@
   top: 0;
   width: 100%;
   @include centered(x);
+  &-img {
+    margin-top: -480px;
+  }
 }
 
 .hero__container {
