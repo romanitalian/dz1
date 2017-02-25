@@ -4,12 +4,13 @@
     padding: 0 $block-bottom;
   }
   padding-bottom: $block-bottom;
+  position: relative;
 }
 
 .about__col {
   float: left;
   width: 50%;
-  position: relative;
+  //position: relative;
   &_left {
     background: $white;
     .about__triangle {

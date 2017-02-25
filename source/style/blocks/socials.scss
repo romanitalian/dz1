@@ -11,11 +11,14 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: 1.2rem;
-    border: 1px solid red;
+  }
+  &__item:first-child {
+    margin-left: 0;
   }
   &__icon {
-    width: 25px;
-    height: 35px;
+    width: 31px;
+    height: 22px;
+    display: block;
     &:hover {
       fill: $icon-color-hover;
     }
