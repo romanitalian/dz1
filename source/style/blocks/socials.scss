@@ -6,11 +6,12 @@
   }
   &__link {
     fill: $white;
-    margin-right: 27px;
   }
   &__item {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 1.2rem;
+    border: 1px solid red;
   }
   &__icon {
     width: 25px;

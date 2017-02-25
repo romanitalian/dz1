@@ -33,3 +33,10 @@
     clear: both;
   }
 }
+
+
+@mixin tablets() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}

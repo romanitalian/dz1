@@ -15,6 +15,7 @@ global.$ = {
   browserSync: require('browser-sync').create(),
   merge: require('merge-stream'),
   sassGlob: require('gulp-sass-glob'),
+  cssunit: require('gulp-css-unit'),
   gp: require('gulp-load-plugins')()
 };
 

@@ -1,3 +1,9 @@
+html {
+  font-size: 16px;
+  @include tablets {
+    font-size: 14px;
+  }
+}
 body {
   height: 100%;
   margin: 0;

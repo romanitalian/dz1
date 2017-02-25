@@ -13,6 +13,29 @@ include ./sections/_mixins
     {href: "#", title: 'Блог'},
     {href: "#", title: 'Аторизация'}
     ]
+-
+    var skills = [
+    {'type': 'Backend', 'items': [
+        {'title' : 'PHP', 'value': 50},
+        {'title' : 'MySQL', 'value': 50},
+        {'title' : 'pgSQL', 'value': 50},
+        {'title' : 'pgSQL', 'value': 50},
+        {'title' : 'Node.js', 'value': 50}
+    ]},
+    {'type': 'Frontend', 'items': [
+        {'title' : 'HTML5', 'value': 50},
+        {'title' : 'CSS3', 'value': 50},
+        {'title' : 'JavaScript', 'value': 50},
+        {'title' : 'jQuery', 'value': 50}
+    ]},
+    {'type': 'WorkFlow', 'items': [
+        {'title' : 'Git', 'value': 50},
+        {'title' : 'Gulp', 'value': 50},
+        {'title' : 'Bower', 'value': 50},
+        {'title' : 'Composer', 'value': 50},
+        {'title' : 'Vagrant', 'value': 50}
+    ]}
+    ]
 - contacts = {skype: "romanitalian", phone: "7-000-000-0000", email: "romanitalian.net@gmail.com", address: "Новосибирск, ул. Инская, д. 14"}
 
 doctype html
@@ -86,108 +109,17 @@ html(lang='ru')
                                 | Но я также могу быть полезен в задачах Frontend разработки.
                                 | Мне интересны веб-сервисы и веб-приложения в целом, с технологической точки зрения.
                             ul.skills-group
-                                li.skills-group__item
-                                    .skills-group__title Backend
-                                    ul.skills-list
-                                        li.skills-list__item
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title PHP
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title MySQL
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title pgSQL
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title MongoDB
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title Java
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title Python
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title GoLang
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title Node.js
-                                li.skills-group__item
-                                    .skills-group__title Frontend
-                                    ul.skills-list
-                                        li.skills-list__item
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title HTML5
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title CSS3
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title JavaScript
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title jQuery
-                                li.skills-group__item
-                                    .skills-group__title WorkFlow
-                                    ul.skills-list
-                                        li.skills-list__item
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title Git
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title Gulp
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title Bower
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title Composer
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title Vagrant
-                                            .skill
-                                                svg.skill__circle
-                                                    circle(cx="54" cy="54" r="45").skills__circle-under
-                                                    circle(cx="54" cy="54" r="45").skills__circle-above
-                                                .skill__title docker
+                                each skill in skills
+                                    li.skills-group__item
+                                        .skills-group__title #{skill.type}
+                                        ul.skills-list
+                                            li.skills-list__item
+                                                each skl in skill.items
+                                                    .skill
+                                                        svg.skill__circle
+                                                            circle(cx="55" cy="55" r="40").skills__circle-under
+                                                            circle(cx="55" cy="55" r="40").skills__circle-above
+                                                        .skill__title #{skl.title}
                 section.section.map
                     img(src="assets/img/map.jpg" alt="map").section__map
                     .contacts
@@ -238,4 +170,4 @@ html(lang='ru')
                                         a(href="tel:// #{contacts.tel}", title=contacts.tel) #{contacts.tel}
                                     li #{contacts.address}
                     .footer__copyright
-                        | Roman Roman | Создано с любовью на кухне | 2017
+                        | Roman Roman | Создано с любовью на кухне | 2017  

@@ -16,12 +16,32 @@
       left: 0;
       fill: $white;
     }
+
+    @include tablets {
+      float: none;
+      width: 100%;
+      padding: 0 rem(100px);
+
+      &:after {
+        display: none;
+      }
+    }
   }
   &_right {
     background: $beige;
     .about__triangle {
       right: 0;
       fill: $beige;
+    }
+
+    @include tablets {
+      float: none;
+      width: 100%;
+      padding: 0 rem(100px);
+
+      &:after {
+        display: none;
+      }
     }
   }
   .about__col_left {
